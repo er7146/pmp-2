@@ -2,4 +2,3 @@ rails s -b $IP -p $PORT
 
 #before_filter :authenticate_spree_user!
 
-git@github.com:er7146/spree_pmp.git
