@@ -1,6 +1,8 @@
-rails s -b $IP -p $PORT
+## rails s -b $IP -p $PORT
 
-#before_filter :authenticate_spree_user!
+## before_filter :authenticate_spree_user!
 
-http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/
+## http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/
+
+
 
