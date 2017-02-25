@@ -34,7 +34,7 @@ gem 'json'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'spree', '~> 3.1.0'
+gem 'spree', '~> 3.1.3'
 gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_gateway', '~> 3.1.0'
 

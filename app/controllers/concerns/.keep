@@ -4,5 +4,6 @@
 
 ## http://lepidllama.net/blog/how-to-push-an-existing-cloud9-project-to-github/
 
-
-
+## git add .
+## git commit -m "my commit"
+## git push -u origin master
