@@ -31,6 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'puma'
 gem 'rails_12factor', group: :production
 gem 'json'
+gem 'rspec-rails'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
