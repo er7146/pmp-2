@@ -13,6 +13,11 @@ Spree.config do |config|
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
+  
+  config.use_s3 = true
+  config.s3_bucket = '<01valde>'
+  config.s3_access_key = "<AKIAI2PVTUIM42PDSBGA>"
+  config.s3_secret = "<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>"
 end
 
 Spree.user_class = "Spree::User"
