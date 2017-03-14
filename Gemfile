@@ -32,16 +32,17 @@ gem 'puma'
 gem 'rails_12factor', group: :production
 gem 'json'
 gem 'rspec-rails'
+gem 'rack-cors'
+gem 'aws-sdk', '~> 2.3'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
+#gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
 
 gem 'spree', '~> 3.1.3'
 gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_gateway', '~> 3.1.0'
 
 gem 'globalize', '~> 5.0.0'
-
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -8,6 +8,7 @@
 ## git commit -m "my commit"
 ## git push -u origin master
 
-heroku config:add S3_KEY=[your S3 key]
-heroku config:add S3_SECRET=[your S3 secret]
-heroku config:add S3_BUCKET=[your S3 bucket]
+##heroku config:add S3_KEY=[your S3 key]
+##heroku config:add S3_SECRET=[your S3 secret]
+##heroku config:add S3_BUCKET=[your S3 bucket]
+
