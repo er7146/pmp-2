@@ -35,6 +35,7 @@ gem 'rspec-rails'
 gem 'rack-cors'
 gem 'aws-sdk', '~> 2.3'
 gem 'sendgrid-ruby'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 #gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
