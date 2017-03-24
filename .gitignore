@@ -18,6 +18,7 @@
 !/log/.keep
 /tmp
 sendgrid.env
+/mailers/*
 server.crt
 server.csr
 server.pass.key
