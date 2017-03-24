@@ -38,7 +38,7 @@ gem 'aws-sdk', '~> 2.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
- gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
+ #gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
 
 gem 'spree', '~> 3.1.3'
 gem 'spree_auth_devise', '~> 3.1.0'
