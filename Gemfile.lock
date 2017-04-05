@@ -366,7 +366,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   json
-  paperclip (= 4.3.6)
   pg
   puma
   rack-cors
