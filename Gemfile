@@ -32,7 +32,7 @@ gem 'puma'
 gem 'rails_12factor', group: :production
 gem 'json'
 gem 'rspec-rails'
-gem 'rack-cors'
+#gem 'rack-cors'
 gem 'aws-sdk', '< 2.0'
 #gem "paperclip",'4.3.6'
 # gem 'sendgrid-ruby'
