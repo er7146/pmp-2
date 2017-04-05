@@ -1,3 +1,5 @@
+require 'heroku_dyno_metadata'
+
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -47,9 +49,12 @@ Rails.application.configure do
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
   config.log_level = :debug
+  
+  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+  config.force_ssl = true
 
   # Prepend all log lines with the following tags.
-  # config.log_tags = [ :subdomain, :uuid ]
+    config.log_tags = [ :uuid ]
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
@@ -76,5 +81,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
-
+ # Deface now supports precompiling where all overrides are loaded and
+  # applied to the original views and the resulting templates are then
+  # saved to your application's app/compiled_views directory.
+  # https://github.com/spree/deface#production--precompiling
+  config.deface.enabled = false
+  
 end
