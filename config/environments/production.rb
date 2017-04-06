@@ -84,6 +84,6 @@ Rails.application.configure do
   # applied to the original views and the resulting templates are then
   # saved to your application's app/compiled_views directory.
   # https://github.com/spree/deface#production--precompiling
-  config.deface.enabled = false
+ # config.deface.enabled = false
   
 end
