@@ -52,7 +52,8 @@ Rails.application.configure do
   config.force_ssl = true
 
   # Prepend all log lines with the following tags.
-    config.log_tags = [ :uuid ]
+  #  config.log_tags = [ :uuid ]
+   config.log_tags = [ :subdomain, :uuid ]
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
