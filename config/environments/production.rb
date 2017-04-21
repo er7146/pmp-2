@@ -53,7 +53,7 @@ Rails.application.configure do
 
   # Prepend all log lines with the following tags.
   #  config.log_tags = [ :uuid ]
-  # config.log_tags = [ :subdomain, :uuid ]
+  config.log_tags = [ :subdomain, :uuid ]
 
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
@@ -84,6 +84,6 @@ Rails.application.configure do
   # applied to the original views and the resulting templates are then
   # saved to your application's app/compiled_views directory.
   # https://github.com/spree/deface#production--precompiling
- # config.deface.enabled = false
+  # config.deface.enabled = false
   
 end

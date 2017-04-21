@@ -12,3 +12,6 @@
 ##heroku config:add S3_SECRET=[your S3 secret]
 ##heroku config:add S3_BUCKET=[your S3 bucket]
 
+rake:railties:migrations
+
+rake 101:export DATABASE_NAME=$postgresql-fluffy-83816
