@@ -87,3 +87,9 @@ Rails.application.configure do
   # config.deface.enabled = false
   
 end
+
+config.paperclip_defaults = 
+{ storage: :s3, bucket: Rails.application.secrets.S3_BUCKET, 
+s3_region: Rails.application.secrets.S3_REGION, 
+s3_credentials: { access_key_id: Rails.application.secrets.AWS_ACCESS_KEY_ID, 
+secret_access_key: Rails.application.secrets.AWS_SECRET_ACCESS_KEY, s3_host_name: "s3-xxx-.amazonaws.com", } }
