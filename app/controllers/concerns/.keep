@@ -15,3 +15,5 @@
 rake:railties:migrations
 
 rake 101:export DATABASE_NAME=$postgresql-fluffy-83816
+
+'s3-us-east-1.amazonaws.com'
