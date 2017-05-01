@@ -17,7 +17,7 @@ Spree.config do |config|
 
 Spree.user_class = "Spree::User"
 
-
+require 'aws-sdk'
 attachment_config = {
 
   s3_credentials: {
