@@ -4,3 +4,5 @@
 #Paperclip::Attachment.default_options[:s3_host_name] = 's3.amazonaws.com'
 # config/initializers/paperclip.rb
 #Paperclip::Attachment.default_options[:s3_01valde] = 's3-us-east-1.amazonaws.com'
+
+#:path => ":attachment/:id/:style.:extension"
