@@ -1,0 +1,12 @@
+{
+  "sourceBucket" : "01valde",
+  "destinationBucket" : "arn:aws:s3:::01valde",
+  "version" : "2016-11-30",
+  "fileFormat" : "CSV",
+  "fileSchema" : "Bucket, Key, Size, LastModifiedDate, ETag, StorageClass, ReplicationStatus",
+  "files" : [ {
+    "key" : "01valde/01valde/data/991cc39f-8b9c-4fcc-8c74-8623ad0e3131.csv.gz",
+    "size" : 6147,
+    "MD5checksum" : "789e9cd1c0b6d85cb3f69dc4bce8b4b5"
+  } ]
+}
