@@ -47,8 +47,8 @@ attachment_config = {
       large:    "600x600>"
   },
 
-  path:           "/:class/:id/:style/:basename.:extension",
-  default_url:    "/:class/:id/:style/:basename.:extension",
+  path:           "/:attachment/:id/:style/:basename.:extension",
+  default_url:    "/:attachment/:id/:style/:basename.:extension",
   default_style:  "product"
 }
 
