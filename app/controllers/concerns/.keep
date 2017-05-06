@@ -19,3 +19,5 @@ rake 101:export DATABASE_NAME=$postgresql-fluffy-83816
 's3-us-west-2.amazonaws.com'
 
 path: ':rails_root/public/spree/products/:id/:style/:basename.:extension',
+
+aws s3 sync . s3://01valde/path

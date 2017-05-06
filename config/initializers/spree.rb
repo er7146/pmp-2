@@ -3,7 +3,7 @@
 #require_dependency "#{Rails.root}/lib/spree_home_controller"
 #require_dependency "#{Rails.root}/lib/sfdc_pricebook"
 #require_dependency "#{Rails.root}/lib/spree_sfdc_hooks"
-#require_dependency "#{Rails.root}/lib/spree_taxon_images"
+require_dependency "#{Rails.root}/lib/spree_taxon_images"
 #
 # Note: Initializing preferences available within the Admin will overwrite any changes that were made through the user interface when you restart.
 #       If you would like users to be able to update a setting with the Admin it should NOT be set here.
@@ -28,7 +28,7 @@ end
 # Support for Heroku S3 Add-on
 aws_s3_path = ENV['AWS_S3_PATH'] ? "/#{ENV['AWS_S3_PATH']}" : ''
 
-attachment_config = {
+paperclip_s3_config = {
 
   s3_credentials: {
     access_key_id:     ENV['AWS_ACCESS_KEY_ID'],
@@ -54,8 +54,15 @@ attachment_config = {
   default_style:  "product"
 }
 
-attachment_config.each do |key, value|
+#attachment_config.each do |key, value|
+  #Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
+  
+  paperclip_s3_config.each do |key, value|
   Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
+  Spree::Taxon.attachment_definitions[:icon][key.to_sym] = value
+  Spree::Taxon.attachment_definitions[:hero][key.to_sym] = value
+  Spree::Taxon.attachment_definitions[:group][key.to_sym] = value
+  Spree::Taxon.attachment_definitions[:style][key.to_sym] = value
 end
 
   #path:           "#{aws_s3_path}/:class/:id/:style/:basename.:extension",
