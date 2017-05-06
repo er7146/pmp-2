@@ -33,7 +33,7 @@ gem 'rails_12factor', group: :production
 gem 'json'
 gem 'rspec-rails'
 #gem 'rack-cors'
-#gem 'aws-sdk', '~> 2'
+gem 'aws-sdk', '~> 2'
 gem 'aws-sdk-rails'
 # gem 'sendgrid-ruby'
 

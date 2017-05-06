@@ -58,6 +58,8 @@ GEM
       execjs
     awesome_nested_set (3.0.3)
       activerecord (>= 4.0.0, < 5)
+    aws-sdk (2.9.15)
+      aws-sdk-resources (= 2.9.15)
     aws-sdk-core (2.9.15)
       aws-sigv4 (~> 1.0)
       jmespath (~> 1.0)
@@ -362,6 +364,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk (~> 2)
   aws-sdk-rails
   byebug
   coffee-rails (~> 4.1.0)
