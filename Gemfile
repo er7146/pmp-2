@@ -34,7 +34,9 @@ gem 'json'
 gem 'rspec-rails'
 #gem 'rack-cors'
 gem 'aws-sdk', '~> 2'
-gem 'aws-sdk-rails'
+gem 'paperclip-aws-core'
+
+#gem 'aws-sdk-rails'
 # gem 'sendgrid-ruby'
 
 # Use Capistrano for deployment
