@@ -16,10 +16,7 @@
 ##  puts "#{b.name}"
 #end
 
-require 'aws-sdk'
-require 'json'
-creds = JSON.load(File.read('secrets.json'))
-Aws.config[:credentials] = Aws::Credentials.new(creds['AccessKeyId'], creds['SecretAccessKey'])
+
 
 
 
