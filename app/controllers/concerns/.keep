@@ -21,3 +21,4 @@ rake 101:export DATABASE_NAME=$postgresql-fluffy-83816
 path: ':rails_root/public/spree/products/:id/:style/:basename.:extension',
 
 aws s3 sync . s3://01valde/path
+
