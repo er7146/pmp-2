@@ -16,7 +16,8 @@ require_dependency "#{Rails.root}/lib/spree_taxon_images"
 # config.setting_name = 'new value'
 Spree.config do |config|
   # See Gem spree_core-3.0.1/app/models/spree/app_configuration.rb for all predefined preferences.
-  config.logo = "logo/pmp_logo2.png"
+  config.logo = "logo.png"
+  config.admin_interface_logo = "logo.png"
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
