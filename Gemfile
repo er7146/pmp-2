@@ -49,7 +49,7 @@ gem 'spree', '~> 3.1.3'
 gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_gateway', '~> 3.1.0'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
-#gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
 
 
 gem 'globalize', '~> 5.0.0'
