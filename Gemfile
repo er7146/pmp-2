@@ -35,6 +35,8 @@ gem 'rspec-rails'
 #gem 'rack-cors'
 gem 'aws-sdk', '~> 2'
 
+gem 'filepicker-rails'
+
 gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523bd46c768226893f23889079a7aa9c73b57d68'
 
 # gem 'sendgrid-ruby'
@@ -47,6 +49,8 @@ gem 'spree', '~> 3.1.3'
 gem 'spree_auth_devise', '~> 3.1.0'
 gem 'spree_gateway', '~> 3.1.0'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
+gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+
 
 gem 'globalize', '~> 5.0.0'
 
