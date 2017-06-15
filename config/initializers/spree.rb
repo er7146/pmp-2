@@ -3,7 +3,7 @@
 #require_dependency "#{Rails.root}/lib/spree_home_controller"
 #require_dependency "#{Rails.root}/lib/sfdc_pricebook"
 #require_dependency "#{Rails.root}/lib/spree_sfdc_hooks"
-require_dependency "#{Rails.root}/lib/spree_taxon_images"
+#require_dependency "#{Rails.root}/lib/spree_taxon_images"
 #
 # Note: Initializing preferences available within the Admin will overwrite any changes that were made through the user interface when you restart.
 #       If you would like users to be able to update a setting with the Admin it should NOT be set here.
@@ -22,8 +22,8 @@ Spree.config do |config|
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
 
-
 Spree.user_class = "Spree::User"
+#Spree.user_class = "User"
 end
 
 # Support for Heroku S3 Add-on
@@ -34,14 +34,14 @@ paperclip_s3_config = {
   s3_credentials: {
     access_key_id:     ENV['AWS_ACCESS_KEY_ID'],
     secret_access_key: ENV['AWS_SECRET_ACCESS_KEY'],
-    bucket:            ENV['S3_BUCKET_NAME'],
+    bucket:            ENV['AWS_S3_BUCKET'],
     s3_region:         ENV['AWS_REGION']
   },
 
   storage:        :s3,
   s3_headers:     { "Cache-Control" => "max-age=31557600" },
   s3_protocol:    "https",
-  bucket:         ENV['S3_BUCKET_NAME'],
+  bucket:         ENV['AWS_S3_BUCKET'],
   url:            ":s3_domain_url",
 
   styles: {
@@ -56,12 +56,12 @@ paperclip_s3_config = {
   default_style:  "product"
 }
 
-  
+
   paperclip_s3_config.each do |key, value|
   Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
-  Spree::Taxon.attachment_definitions[:icon][key.to_sym] = value
-  Spree::Taxon.attachment_definitions[:hero][key.to_sym] = value
-  Spree::Taxon.attachment_definitions[:group][key.to_sym] = value
-  Spree::Taxon.attachment_definitions[:style][key.to_sym] = value
+  #Spree::Taxon.attachment_definitions[:icon][key.to_sym] = value
+ # Spree::Taxon.attachment_definitions[:hero][key.to_sym] = value
+ # Spree::Taxon.attachment_definitions[:group][key.to_sym] = value
+ # Spree::Taxon.attachment_definitions[:style][key.to_sym] = value
 end
 

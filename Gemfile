@@ -42,7 +42,7 @@ gem 'paperclip', :git=> 'https://github.com/thoughtbot/paperclip', :ref => '523b
 # gem 'sendgrid-ruby'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+
  #gem 'spree_heroku', :git => 'git://github.com/joneslee85/spree-heroku.git'
 
 gem 'spree', '~> 3.1.3'
@@ -60,9 +60,10 @@ group :development, :test do
 end
 
 group :development do
+  gem 'dotenv-rails', groups: [:development, :test]
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
-
+  gem 'capistrano-rails', group: :development
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'rake_db_dump'

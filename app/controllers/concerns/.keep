@@ -34,3 +34,8 @@ aws s3 sync . s3://01valde/path
 </script>
 <input type="button" value="Upload" onclick="showPicker()" />
 
+aws configure list
+
+export AWS_DEFAULT_PROFILE=profile_name
+
+https://c9.io/jonatans/ruby-aws-s3-example
